@@ -23,13 +23,13 @@ export default function Header() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <div className="flex items-center space-x-2">
-              <div className="w-12 h-12 rounded-lg flex items-center justify-center">
+              <div className="w-20 h-20 rounded-lg flex items-center justify-center">
                 <Link to="/">
                   <img
-                    src="/image/we-care-you-heal-logo.webp"
+                    src="/image/we-care-you-heal-logo.jpg"
                     alt="logo"
-                    width={200}
-                    height={200}
+                    width={400}
+                    height={400}
                   />
                 </Link>
               </div>
