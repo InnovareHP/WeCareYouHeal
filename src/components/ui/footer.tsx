@@ -1,5 +1,4 @@
 import { Link } from "@tanstack/react-router";
-import { Instagram, Youtube } from "lucide-react";
 
 export const Footer = () => {
   const navItems = [
@@ -41,8 +40,8 @@ export const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4 text-yellow-300">Contact Info</h4>
             <div className="space-y-2 text-gray-400">
-              <p>Chapel Hill, NC 27514</p>
-              <p>(984) 327-5491</p>
+              <p>Portage, MI</p>
+              <p>312-350-4801</p>
               <a
                 href="mailto:gina@wecareyouheal.com"
                 className="hover:text-teal-400 transition-colors block"
@@ -57,22 +56,7 @@ export const Footer = () => {
           <p className="text-gray-500 text-sm">
             © 2025 We Care, You Heal. All Rights Reserved.
           </p>
-          <div className="flex gap-6">
-            <a
-              href="https://www.instagram.com/squarespace"
-              className="text-gray-400 hover:text-teal-400 transition-colors flex items-center gap-2"
-            >
-              <Instagram className="w-5 h-5" />
-              <span>Instagram</span>
-            </a>
-            <a
-              href="https://www.youtube.com/squarespace"
-              className="text-gray-400 hover:text-teal-400 transition-colors flex items-center gap-2"
-            >
-              <Youtube className="w-5 h-5" />
-              <span>YouTube</span>
-            </a>
-          </div>
+          <div className="flex gap-6"></div>
         </div>
       </div>
     </footer>

@@ -13,8 +13,7 @@ const MedicalServicesSection = () => {
     {
       title: "CPR/BLS Certifications",
       icon: Award,
-      description:
-        "Comprehensive life-saving training and certification programs",
+      description: "CNA training coming soon",
       image: "/image/certifications.webp",
     },
     {

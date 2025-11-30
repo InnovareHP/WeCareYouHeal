@@ -1,5 +1,6 @@
 import { ExternalLink, FileText, TrendingUp, Users } from "lucide-react";
 import { useState } from "react";
+import { Button } from "../ui/button";
 
 export default function StaffResourcesPage() {
   const [formData, setFormData] = useState({
@@ -73,11 +74,11 @@ export default function StaffResourcesPage() {
                 your employee documents, access GOCO here.
               </p>
               <a
-                href="https://secure.goco.io/login"
+                href="https://login.flex.paychex.com/login_static/UsernameOnly.html?lang=en&downtime=false"
                 target="_blank"
                 className="inline-flex items-center text-teal-600 hover:text-teal-700 font-semibold group"
               >
-                GOCO Sign-In
+                Link
                 <ExternalLink className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
@@ -132,115 +133,21 @@ export default function StaffResourcesPage() {
                 </ul>
               </div>
             </div>
-
             {/* Right Column - Form */}
-            <div className="bg-white rounded-2xl p-8 md:p-10 shadow-2xl">
-              <h3 className="text-3xl font-bold text-gray-900 mb-2">
-                Join our team
+            <div>
+              <h3 className="text-2xl font-bold text-yellow-400 mb-6 ">
+                Schedule a meeting with me
               </h3>
-              <p className="text-gray-600 mb-8">
-                Fill out the form below and we'll get back to you soon.
-              </p>
 
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-semibold text-gray-700 mb-2">
-                      First Name <span className="text-red-500">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      name="firstName"
-                      required
-                      value={formData.firstName}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-teal-500 focus:outline-none transition-colors"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-semibold text-gray-700 mb-2">
-                      Last Name <span className="text-red-500">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      name="lastName"
-                      required
-                      value={formData.lastName}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-teal-500 focus:outline-none transition-colors"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Email <span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    type="email"
-                    name="email"
-                    required
-                    value={formData.email}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-teal-500 focus:outline-none transition-colors"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Specialty <span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    name="specialty"
-                    required
-                    value={formData.specialty}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-teal-500 focus:outline-none transition-colors"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Position Applying For{" "}
-                    <span className="text-red-500">*</span>
-                  </label>
-                  <select
-                    name="position"
-                    required
-                    value={formData.position}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-teal-500 focus:outline-none transition-colors"
-                  >
-                    <option value="">Select an option</option>
-                    <option value="nurse">Registered Nurse</option>
-                    <option value="cna">Certified Nursing Assistant</option>
-                    <option value="caregiver">Caregiver</option>
-                    <option value="admin">Administrative Staff</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Message
-                  </label>
-                  <textarea
-                    name="message"
-                    rows={4}
-                    value={formData.message}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-teal-500 focus:outline-none transition-colors resize-none"
-                  ></textarea>
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full bg-teal-500 hover:bg-teal-600 text-white py-4 rounded-full font-bold text-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+              <Button className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-6 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
+                <a
+                  href="https://doodle.com/sign-up-sheet/participate/9718d90b-71e7-4457-aac6-cbf165b0eb74/select"
+                  target="_blank"
                 >
-                  Submit Application
-                </button>
-              </form>
-            </div>
+                  Schedule a meeting with me
+                </a>
+              </Button>
+            </div>{" "}
           </div>
         </div>
       </section>

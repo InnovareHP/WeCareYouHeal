@@ -1,29 +1,15 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
-import { BookOpen, Home, Users } from "lucide-react";
+import { Users } from "lucide-react";
 
 const NonMedicalServicesSection = () => {
   const services = [
-    {
-      title: "Tutoring",
-      icon: BookOpen,
-      description: "Educational support and personalized learning assistance",
-      color: "from-blue-500 to-cyan-500",
-      image: "/image/tutoring.webp",
-    },
     {
       title: "Public Health Consulting",
       icon: Users,
       description: "Expert guidance on health programs and policies",
       color: "from-teal-500 to-green-500",
       image: "/image/public-health.webp",
-    },
-    {
-      title: "Household Assistance",
-      icon: Home,
-      description: "Daily living support for comfortable home care",
-      color: "from-purple-500 to-pink-500",
-      image: "/image/assistance.webp",
     },
   ];
 

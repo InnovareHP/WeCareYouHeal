@@ -54,9 +54,9 @@ const ContactFormSection = () => {
 
             <div className="space-y-4">
               {[
-                { icon: Phone, text: "(984) 327-5491" },
+                { icon: Phone, text: "312-350-4801" },
                 { icon: Mail, text: "gina@wecareyouheal.com" },
-                { icon: MapPin, text: "Chapel Hill, NC 27514" },
+                { icon: MapPin, text: "Portage, MI" },
               ].map((item, i) => (
                 <motion.div
                   key={i}
