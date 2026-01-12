@@ -121,7 +121,10 @@ export default function ServicesPage() {
             party for certified and organizations.
           </p>
           <Button className="mt-6 bg-teal-600 hover:bg-teal-700 px-8 py-6 text-lg rounded-full shadow-lg">
-            <a href="https://form.jotform.com/231426532065147" target="_blank">
+            <a
+              href="https://doodle.com/sign-up-sheet/participate/9718d90b-71e7-4457-aac6-cbf165b0eb74/select"
+              target="_blank"
+            >
               Book Now
             </a>
           </Button>

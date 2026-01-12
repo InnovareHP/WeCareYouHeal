@@ -1,18 +1,6 @@
 import { Star } from "lucide-react";
-import { useState } from "react";
 
 export default function AboutUsPage() {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  const navItems = [
-    { name: "Home", href: "#home" },
-    { name: "About Us", href: "#about", active: true },
-    { name: "Blog", href: "#blog" },
-    { name: "Staff Resources", href: "#staff" },
-    { name: "Services", href: "#services" },
-    { name: "Contact Us", href: "#contact" },
-  ];
-
   const testimonials = [
     {
       text: "When I started the process of applying for an adult foster care license in Michigan, I immediately knew I would have to work with a consultant to help with the development of the numerous policies needed for the license and to better understand the state law and regulations for adult foster care homes. We Care, You Heal has been an invaluable resource in this process. They were knowledgeable about the required policies and procedures for running an adult foster care, they were familiar with the resources in the area to support operations and they were timely and professional in their deliverables. I would highly recommend them and would work with them again!",
@@ -33,18 +21,9 @@ export default function AboutUsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-5 gap-12 items-center">
             {/* Image */}
-            <div className="lg:col-span-2 flex justify-center">
-              <img
-                src="/image/Gina Adatsi.webp"
-                alt="Gina"
-                width={400}
-                height={400}
-                className="rounded-3xl shadow-2xl object-cover"
-              />
-            </div>
 
             {/* Content */}
-            <div className="lg:col-span-3">
+            <div className="lg:col-span-5">
               <div className="mb-6">
                 <span className="inline-block text-teal-600 font-semibold text-sm uppercase tracking-wider mb-2">
                   Our Founder
@@ -198,7 +177,7 @@ export default function AboutUsPage() {
           {/* CTA */}
           <div className="text-center">
             <a
-              href="https://form.jotform.com/231426532065147"
+              href="https://doodle.com/sign-up-sheet/participate/9718d90b-71e7-4457-aac6-cbf165b0eb74/select"
               target="_blank"
               className="bg-gradient-to-r from-teal-500 to-teal-600 hover:from-teal-600 hover:to-teal-700 text-white px-12 py-4 rounded-full font-bold text-lg transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 transform"
             >
