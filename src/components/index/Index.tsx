@@ -1,4 +1,3 @@
-import ContactFormSection from "./ContactFormSection";
 import HeroSection from "./HeroSection";
 import MedicalServicesSection from "./MedicalServicesSection";
 import NonMedicalServicesSection from "./NonMedicalServicesSection";
@@ -11,7 +10,7 @@ const Index = () => {
       <QualityCareSection />
       <MedicalServicesSection />
       <NonMedicalServicesSection />
-      <ContactFormSection />
+      {/* <ContactFormSection /> */}
     </>
   );
 };

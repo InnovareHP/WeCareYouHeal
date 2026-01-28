@@ -47,6 +47,9 @@ export default function Header() {
                     ? "text-teal-600 border-b-2 border-teal-600 pb-1"
                     : ""
                 }`}
+                {...(item.name === "Contact Us" && {
+                  href: "mailto:gina@wecareyouheal.com",
+                })}
               >
                 {item.name}
               </a>
